@@ -3,4 +3,12 @@ name = "average_speed"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+name = "average_speed"
+path = "src/lib.rs"
+
+[[bin]]
+name = "average_speed"
+path = "src/main.rs"
+
 [dependencies]
