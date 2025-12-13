@@ -2,18 +2,28 @@
 //A driver sets out on a journey. For the first half of the distance, she drives at the
 // leisurely pace of 30 mi/h; during the second half she drives 60 mi/h. What is her
 // average speed on this trip?
-pub fn average_speed(speed1: f64, speed2: f64) -> f64 {
-    let total_distance = 2.0;
+use core::prelude::v1::derive;
 
-    let distance1 = total_distance / 2.0;
-    let distance2 = total_distance / 2.0;
+#[derive(Debug, PartialEq)]
+pub enum Speed{
+    Float(f64),
+    Integer(i64),   
+}
 
-    let time1 = distance1 / speed1;
-    let time2 = distance2 / speed2;
-
-    //since dis
-
-    let total_time = time1 + time2;
-
-    total_distance/total_time
+pub fn average_speed(speed1: Speed, speed2: Speed) -> Speed {
+    let (s1, s2) = match (speed1, speed2) {
+        (Speed::Float(a), Speed::Float(b)) => (a, b),
+        (Speed::Integer(a), Speed::Integer(b)) => (a as f64, b as f64),
+        (Speed::Float(a), Speed::Integer(b)) => (a, b as f64),
+        (Speed::Integer(a), Speed::Float(b)) => (a as f64, b),
+    };
+          
+    // Calculate
+    let half_distance = 1.0;
+    let time1 = half_distance / s1;
+    let time2 = half_distance / s2;
+    let result = 2.0 / (time1 + time2);
+          
+    // Return as float (more accurate)
+    Speed::Float(result)
 }
