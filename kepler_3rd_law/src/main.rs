@@ -64,7 +64,7 @@ fn main() {
     
     let distance = calculate_planet_distance_from_sun(period_seconds);
     let distance_km = distance / 1000.0;
-    let au = distance / 1.496e11; // Convert to Astronomical Units
+    let au = distance / 1.496e11; // convert to astronomical units
     
     println!("Orbital period: {} {}", period_value, unit);
     println!("Distance from sun: {:.3e} meters", distance);
