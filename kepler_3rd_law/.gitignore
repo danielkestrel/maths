@@ -1,0 +1,24 @@
+# Build artifacts
+/target/
+
+# Cargo.lock is generally committed for binaries, but can be ignored
+# Uncomment the next line if you prefer not to commit it
+# Cargo.lock
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Debug files
+*.dSYM/
+*.pdb
+
+# Backup files
+*.bak
+*.orig
