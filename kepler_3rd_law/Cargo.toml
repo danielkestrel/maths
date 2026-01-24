@@ -2,6 +2,12 @@
 name = "kepler_3rd_law"
 version = "0.1.0"
 edition = "2024"
+description = "Calculate a planet's distance from the Sun using Kepler's Third Law"
+authors = ["danielkestrel"]
+license = "MIT"
+repository = "https://github.com/danielkestrel/maths"
+keywords = ["astronomy", "physics", "kepler", "orbital-mechanics", "cli"]
+categories = ["command-line-utilities", "science"]
 
 [[bin]]
 name = "planet_distance"

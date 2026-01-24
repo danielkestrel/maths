@@ -14,8 +14,8 @@ Thanks for your interest in contributing! This project welcomes contributions of
 1. **Fork** the repository
 2. **Clone** your fork:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/kepler_3rd_law.git
-   cd kepler_3rd_law
+   git clone https://github.com/YOUR_USERNAME/maths.git
+   cd maths/kepler_3rd_law
    ```
 3. **Build** the project:
    ```bash

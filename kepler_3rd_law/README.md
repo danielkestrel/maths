@@ -28,8 +28,8 @@ Where:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/kepler_3rd_law.git
-cd kepler_3rd_law
+git clone https://github.com/danielkestrel/maths.git
+cd maths/kepler_3rd_law
 
 # Build and install
 cargo install --path .
